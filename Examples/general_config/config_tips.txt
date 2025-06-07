@@ -1,0 +1,41 @@
+When you increase the number of parallel environments (`--num-envs`), it's advisable to adjust certain hyperparameters—specifically `buffer_size`, `batch_size`, and `time_horizon`—to maintain efficient and stable training.
+
+### Understanding the Impact of Multiple Environments
+
+In Unity ML-Agents, each environment instance collects experiences independently. When using multiple environments, the total volume of experience data collected per unit time increases proportionally. This influx can fill the experience buffer more rapidly, potentially leading to more frequent policy updates. While this can accelerate learning, it may also introduce instability if not managed properly.
+### Adjusting Hyperparameters Accordingly
+
+1. **Buffer Size (`buffer_size`)**:
+   - This parameter defines the number of experiences collected before performing a policy update.
+   - With more environments, the buffer fills up faster. To ensure that each policy update is based on a sufficiently diverse set of experiences, it's recommended to scale the `buffer_size` proportionally to the number of environments.
+
+2. **Batch Size (`batch_size`)**:
+   - This determines the number of experiences used in each training iteration.
+   - While increasing the number of environments doesn't necessitate a change in `batch_size`, ensuring that `buffer_size` remains a multiple of `batch_size` is crucial for efficient training. 
+
+- Typical Range (Continuous): 512 - 5120
+
+- Typical Range (Discrete): 32 - 512 (source: https://github.com/llSourcell/Unity_ML_Agents/blob/master/docs/best-practices-ppo.md)
+
+
+3. **Time Horizon (`time_horizon`)**:
+   - This sets the number of steps each agent takes before its experiences are added to the buffer.
+   - In multi-environment setups, it's essential to monitor how quickly the buffer fills. If it fills too rapidly, consider adjusting the `time_horizon` to ensure that each trajectory captures meaningful sequences without overwhelming the buffer.
+
+### Practical Example
+
+Suppose you're training with a single environment and have set:
+
+- `buffer_size`: 2048
+- `batch_size`: 64
+- `time_horizon`: 64
+
+If you decide to increase to 8 parallel environments (`--num-envs=8`), a proportional adjustment would be:
+
+- `buffer_size`: 2048 × 8 = 16,384
+- `batch_size`: 64 (unchanged, but ensure it divides evenly into the new `buffer_size`)
+- `time_horizon`: 64 (monitor and adjust based on training dynamics)
+
+### Final Thoughts
+
+Adjusting these hyperparameters in response to the number of parallel environments helps maintain a balance between learning speed and stability. It's essential to monitor training metrics and make iterative adjustments as needed to optimize performance.

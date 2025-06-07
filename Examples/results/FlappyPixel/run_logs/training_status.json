@@ -1,0 +1,65 @@
+{
+    "FlappyPixel": {
+        "checkpoints": [
+            {
+                "steps": 3499922,
+                "file_path": "results/FlappyPixel-envs_10-batch_64-buffer_20480-epochs_6-horizon_128-layers_2-units_256/FlappyPixel/FlappyPixel-3499922.onnx",
+                "reward": 541.7399685382843,
+                "creation_time": 1748942677.2484336,
+                "auxillary_file_paths": [
+                    "results/FlappyPixel-envs_10-batch_64-buffer_20480-epochs_6-horizon_128-layers_2-units_256/FlappyPixel/FlappyPixel-3499922.pt"
+                ]
+            },
+            {
+                "steps": 3999960,
+                "file_path": "results/FlappyPixel-envs_10-batch_64-buffer_20480-epochs_6-horizon_128-layers_2-units_256/FlappyPixel/FlappyPixel-3999960.onnx",
+                "reward": 125.3299925327301,
+                "creation_time": 1748945439.5059593,
+                "auxillary_file_paths": [
+                    "results/FlappyPixel-envs_10-batch_64-buffer_20480-epochs_6-horizon_128-layers_2-units_256/FlappyPixel/FlappyPixel-3999960.pt"
+                ]
+            },
+            {
+                "steps": 4499952,
+                "file_path": "results/FlappyPixel-envs_10-batch_64-buffer_20480-epochs_6-horizon_128-layers_2-units_256/FlappyPixel/FlappyPixel-4499952.onnx",
+                "reward": 115.40999341011047,
+                "creation_time": 1748948225.3488367,
+                "auxillary_file_paths": [
+                    "results/FlappyPixel-envs_10-batch_64-buffer_20480-epochs_6-horizon_128-layers_2-units_256/FlappyPixel/FlappyPixel-4499952.pt"
+                ]
+            },
+            {
+                "steps": 4999996,
+                "file_path": "results/FlappyPixel-envs_10-batch_64-buffer_20480-epochs_6-horizon_128-layers_2-units_256/FlappyPixel/FlappyPixel-4999996.onnx",
+                "reward": 145.00999116897583,
+                "creation_time": 1748950989.0606983,
+                "auxillary_file_paths": [
+                    "results/FlappyPixel-envs_10-batch_64-buffer_20480-epochs_6-horizon_128-layers_2-units_256/FlappyPixel/FlappyPixel-4999996.pt"
+                ]
+            },
+            {
+                "steps": 5000124,
+                "file_path": "results/FlappyPixel-envs_10-batch_64-buffer_20480-epochs_6-horizon_128-layers_2-units_256/FlappyPixel/FlappyPixel-5000124.onnx",
+                "reward": 145.00999116897583,
+                "creation_time": 1748950989.3410656,
+                "auxillary_file_paths": [
+                    "results/FlappyPixel-envs_10-batch_64-buffer_20480-epochs_6-horizon_128-layers_2-units_256/FlappyPixel/FlappyPixel-5000124.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 5000124,
+            "file_path": "results/FlappyPixel-envs_10-batch_64-buffer_20480-epochs_6-horizon_128-layers_2-units_256/FlappyPixel.onnx",
+            "reward": 145.00999116897583,
+            "creation_time": 1748950989.3410656,
+            "auxillary_file_paths": [
+                "results/FlappyPixel-envs_10-batch_64-buffer_20480-epochs_6-horizon_128-layers_2-units_256/FlappyPixel/FlappyPixel-5000124.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "2.5.1+cu124"
+    }
+}
