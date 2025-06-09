@@ -10,7 +10,7 @@ This repository contains a collection of reinforcement learning environments (2d
 
 ## Projects
 
-### MoveToGoal
+### FlappyPixel
 
 In **FlappyPixel**, the agent must learn to navigate through gaps between pipes by flapping at the right moment. The goal is to stay airborne, avoid obstacles, and score points by passing through pipes.
 
@@ -21,7 +21,7 @@ In **FlappyPixel**, the agent must learn to navigate through gaps between pipes 
 * Negative Reward (Penalties):
   * -1: For colliding with an obstacle or the ground, which also ends the episode.
 
-- 📂 [**Go to project folder**](ML-Agents/Examples/MoveToGoal)
+- 📂 [**Go to project folder**](Examples/FlappyPixel)
 <p align="center">
   <img src="Examples/video_and_graphs/FlappyPixel/flappy_pixel_graph.png" alt="FlappyPixel Eval" width="800"/>
 </p>
