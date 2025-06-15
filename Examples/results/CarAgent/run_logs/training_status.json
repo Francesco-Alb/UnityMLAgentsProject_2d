@@ -1,0 +1,65 @@
+{
+    "CarAgent": {
+        "checkpoints": [
+            {
+                "steps": 2499998,
+                "file_path": "results/CarAgent-envs_20-batch_64-buffer_40960-epochs_6-horizon_64-layers_2-units_128/CarAgent/CarAgent-2499998.onnx",
+                "reward": 572.4533766587575,
+                "creation_time": 1749904345.4167864,
+                "auxillary_file_paths": [
+                    "results/CarAgent-envs_20-batch_64-buffer_40960-epochs_6-horizon_64-layers_2-units_128/CarAgent/CarAgent-2499998.pt"
+                ]
+            },
+            {
+                "steps": 2999998,
+                "file_path": "results/CarAgent-envs_20-batch_64-buffer_40960-epochs_6-horizon_64-layers_2-units_128/CarAgent/CarAgent-2999998.onnx",
+                "reward": 1016.8064146836599,
+                "creation_time": 1749907493.6584573,
+                "auxillary_file_paths": [
+                    "results/CarAgent-envs_20-batch_64-buffer_40960-epochs_6-horizon_64-layers_2-units_128/CarAgent/CarAgent-2999998.pt"
+                ]
+            },
+            {
+                "steps": 3016636,
+                "file_path": "results/CarAgent-envs_20-batch_64-buffer_40960-epochs_6-horizon_64-layers_2-units_128/CarAgent/CarAgent-3016636.onnx",
+                "reward": 702.1722560167312,
+                "creation_time": 1749907581.267504,
+                "auxillary_file_paths": [
+                    "results/CarAgent-envs_20-batch_64-buffer_40960-epochs_6-horizon_64-layers_2-units_128/CarAgent/CarAgent-3016636.pt"
+                ]
+            },
+            {
+                "steps": 3499954,
+                "file_path": "results/CarAgent-envs_20-batch_64-buffer_40960-epochs_6-horizon_64-layers_2-units_128/CarAgent/CarAgent-3499954.onnx",
+                "reward": 373.17603066563606,
+                "creation_time": 1749910665.604281,
+                "auxillary_file_paths": [
+                    "results/CarAgent-envs_20-batch_64-buffer_40960-epochs_6-horizon_64-layers_2-units_128/CarAgent/CarAgent-3499954.pt"
+                ]
+            },
+            {
+                "steps": 3999981,
+                "file_path": "results/CarAgent-envs_20-batch_64-buffer_40960-epochs_6-horizon_64-layers_2-units_128/CarAgent/CarAgent-3999981.onnx",
+                "reward": 4222.289083153009,
+                "creation_time": 1749913740.342486,
+                "auxillary_file_paths": [
+                    "results/CarAgent-envs_20-batch_64-buffer_40960-epochs_6-horizon_64-layers_2-units_128/CarAgent/CarAgent-3999981.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 3016636,
+            "file_path": "results/CarAgent-envs_20-batch_64-buffer_40960-epochs_6-horizon_64-layers_2-units_128/CarAgent.onnx",
+            "reward": 702.1722560167312,
+            "creation_time": 1749907581.267504,
+            "auxillary_file_paths": [
+                "results/CarAgent-envs_20-batch_64-buffer_40960-epochs_6-horizon_64-layers_2-units_128/CarAgent/CarAgent-3016636.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "2.5.1+cu124"
+    }
+}
