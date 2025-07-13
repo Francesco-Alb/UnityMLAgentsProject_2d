@@ -1,0 +1,29 @@
+{
+    "GridAgent": {
+        "checkpoints": [
+            {
+                "steps": 86231,
+                "file_path": "results\\grid_test_001\\GridAgent\\GridAgent-86231.onnx",
+                "reward": 4.8683192990407225,
+                "creation_time": 1752317015.4682841,
+                "auxillary_file_paths": [
+                    "results\\grid_test_001\\GridAgent\\GridAgent-86231.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 86231,
+            "file_path": "results\\grid_test_001\\GridAgent.onnx",
+            "reward": 4.8683192990407225,
+            "creation_time": 1752317015.4682841,
+            "auxillary_file_paths": [
+                "results\\grid_test_001\\GridAgent\\GridAgent-86231.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "2.5.1+cpu"
+    }
+}
