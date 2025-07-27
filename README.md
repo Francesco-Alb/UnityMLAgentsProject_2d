@@ -37,7 +37,7 @@ The agent perceives its environment using:
   <img src="Examples/video_and_graphs/FlappyPixel/flappy_pixel_gif.gif" alt="FlappyPixel Demo" width="600"/>
 </p>
 
---
+---
 
 ### CarAgent2D
 In **CarAgent2D**, the agent controls a 2D car tasked with navigating a track by driving through checkpoints distributed along its layout. The objective is to complete laps efficiently while avoiding collisions with track borders.
@@ -68,7 +68,7 @@ To promote generalisation rather than memorisation, the agent is exposed to vari
   <img src="Examples/video_and_graphs/CarAgent2D/CarAgent2D_gif.gif" alt="CarAgent2D Demo" width="600"/>
 </p>
 
---
+---
 
 ### GridGame
 
