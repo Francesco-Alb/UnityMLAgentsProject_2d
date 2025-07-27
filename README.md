@@ -67,3 +67,37 @@ To promote generalisation rather than memorisation, the agent is exposed to vari
 <p align="center">
   <img src="Examples/video_and_graphs/CarAgent2D/CarAgent2D_gif.gif" alt="CarAgent2D Demo" width="600"/>
 </p>
+
+--
+
+### GridGame
+
+In **GridGame**, the agent must navigate across a discrete grid environment to reach a designated goal tile while avoiding collisions with obstacles and staying within the grid boundaries. The primary challenge lies in spatial reasoning and pathfinding through obstacle layouts.
+
+**Observations**  
+The agent perceives its environment using:
+
+  * _Agent Camera_: Provides a visual observation of the grid layout, including the positions of obstacles, free spaces, and the goal.
+  * _Grid Position Information_: Internally tracks its current grid coordinates, allowing it to relate its actions to its location in the environment (implementation-specific).
+
+**Reward Mechanics**  
+* Positive Reward:
+  * +5.0: For successfully reaching the green goal tile, ending the episode.
+* Negative Reward (Penalties):
+  * -1.0: For moving out of the grid boundaries, which ends the episode.
+  * -1.0: For colliding with an obstacle tile, also ending the episode.
+  * -0.05: Small time-step penalty applied at every step to encourage efficient navigation and shorter paths.
+
+**Learning Dynamics & Exploration Strategy**  
+Episodes are reset after the agent reaches the goal, collides with an obstacle, or exits the grid. The environment is dynamically reset by the `GridManager`, potentially varying obstacle placements or goal locations (depending on implementation), fostering generalisation and adaptive navigation strategies.
+
+- 📂 [**Go to project folder**](Examples/GridGame)
+<p align="center">
+  <img src="Examples/video_and_graphs/GridGame/grid_game_graph.png" alt="GridGame Eval" width="800"/>
+</p>
+
+- 🎥 **Demo:**
+
+<p align="center">
+  <img src="Examples/video_and_graphs/GridGame/grid_game_gif.gif" alt="GridGame Demo" width="600"/>
+</p>
