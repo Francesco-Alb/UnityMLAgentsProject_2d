@@ -25,11 +25,7 @@ public class GridAgent : Agent
 
     public override void CollectObservations(VectorSensor sensor)
     {
-        // Observations (Add to support visual learning or leave out)
-        // sensor.AddObservation(gridPos.x);
-        // sensor.AddObservation(gridPos.y);
-        // sensor.AddObservation(goalPos.x);
-        // sensor.AddObservation(goalPos.y);
+
     }
 
     public override void OnActionReceived(ActionBuffers actions)
