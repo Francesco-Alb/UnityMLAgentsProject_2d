@@ -1,0 +1,30 @@
+https://youtu.be/v1d7SinTzEY?si=cBGMHDcbf1Gv_8lR (+ comments)
+
+Before venv:
+cd C:\Users\USERNAME\Documents\programming_projects\unity_course
+conda create -n ml_agents_env_3_9_13 python=3.9.13
+
+=== without requirements ===
+After venv:
+conda activate ml_agents_env_3_9_13
+python -m pip install --upgrade pip
+pip install mlagents
+pip3 install torch torchvision torchaudio
+mlagents-learn --help
+pip install protobuf==3.20.3
+pip install packaging (i skipped this)
+mlagents-learn --help
+
+(it signalled this)
+daal==2021.4.0
+
+pip freeze > requirements.txt
+
+=== without requirements ===
+* place file in venv folder and run:
+pip install -r requirements.txt
+
+
+== other packages installed after trial and error in unity==
+pip install onnx
+

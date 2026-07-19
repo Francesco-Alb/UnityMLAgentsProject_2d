@@ -1,0 +1,18 @@
+cd C:\Users\franc\Documents\programming_projects\unity_course\unity_ml_agents\rl_unity_project\rl_unity_project_2d\Assets\ML-Agents\Examples
+
+conda activate ml_agents_env_3_9_13
+
+===========================================================
+
+## Train new model with parameters in config
+mlagents-learn general_config/general_config.yaml --run-id=test_001
+
+## Resume training with old model
+mlagents-learn general_config/general_config.yaml --initialize-from=test_001 --run-id=test_002
+
+## Override
+mlagents-learn general_config/general_config.yaml --force --run-id=test_001
+
+============================================================
+## Train new model with parameters in config + imitation demo
+mlagents-learn general_config/general_config.yaml --run-id=test_imitation_001
