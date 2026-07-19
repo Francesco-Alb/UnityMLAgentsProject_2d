@@ -26,15 +26,15 @@ The agent perceives its environment using:
 * Negative Reward (Penalties):
   * -1: For colliding with an obstacle or the ground, which also ends the episode.
 
-- 📂 [**Go to project folder**](Examples/FlappyPixel)
+- 📂 [**Go to project folder**](Assets/ML-Agents/Examples/FlappyPixel)
 <p align="center">
-  <img src="Examples/video_and_graphs/FlappyPixel/flappy_pixel_graph.png" alt="FlappyPixel Eval" width="800"/>
+  <img src="Assets/ML-Agents/Examples/video_and_graphs/FlappyPixel/flappy_pixel_graph.png" alt="FlappyPixel Eval" width="800"/>
 </p>
 
 - 🎥 **Demo:**
 
 <p align="center">
-  <img src="Examples/video_and_graphs/FlappyPixel/flappy_pixel_gif.gif" alt="FlappyPixel Demo" width="600"/>
+  <img src="Assets/ML-Agents/Examples/video_and_graphs/FlappyPixel/flappy_pixel_gif.gif" alt="FlappyPixel Demo" width="600"/>
 </p>
 
 ---
@@ -57,15 +57,15 @@ The agent learns to navigate the track based on:
 **Learning Dynamics & Exploration Strategy**
 To promote generalisation rather than memorisation, the agent is exposed to varied starting conditions. At the beginning of each episode, it is randomly spawned at one of the checkpoint positions. Additionally, it has a 50/50 chance of facing either the standard or reversed direction, training it to complete the track in both orientations. This randomisation encourages robust policy learning that transfers well across different scenarios.
 
-- 📂 [**Go to project folder**](Examples/CarAgent2D)
+- 📂 [**Go to project folder**](Assets/ML-Agents/Examples/CarAgent2D)
 <p align="center">
-  <img src="Examples/video_and_graphs/CarAgent2D/CarAgent2D_graph.png" alt="CarAgent2D Eval" width="800"/>
+  <img src="Assets/ML-Agents/Examples/video_and_graphs/CarAgent2D/CarAgent2D_graph.png" alt="CarAgent2D Eval" width="800"/>
 </p>
 
 - 🎥 **Demo:**
 
 <p align="center">
-  <img src="Examples/video_and_graphs/CarAgent2D/CarAgent2D_gif.gif" alt="CarAgent2D Demo" width="600"/>
+  <img src="Assets/ML-Agents/Examples/video_and_graphs/CarAgent2D/CarAgent2D_gif.gif" alt="CarAgent2D Demo" width="600"/>
 </p>
 
 ### GridGame
@@ -89,13 +89,13 @@ The agent perceives its environment using:
 **Learning Dynamics & Exploration Strategy**  
 Episodes are reset after the agent reaches the goal, collides with an obstacle, or exits the grid. The environment is dynamically reset by the `GridManager`, potentially varying obstacle placements or goal locations (depending on implementation), fostering generalisation and adaptive navigation strategies.
 
-- 📂 [**Go to project folder**](Examples/GridGame)
+- 📂 [**Go to project folder**](Assets/ML-Agents/Examples/GridGame)
 <p align="center">
-  <img src="Examples/video_and_graphs/GridGame/grid_game_graph.png" alt="GridGame Eval" width="800"/>
+  <img src="Assets/ML-Agents/Examples/video_and_graphs/GridGame/grid_game_graph.png" alt="GridGame Eval" width="800"/>
 </p>
 
 - 🎥 **Demo:**
 
 <p align="center">
-  <img src="Examples/video_and_graphs/GridGame/grid_game_gif.gif" alt="GridGame Demo" width="600"/>
+  <img src="Assets/ML-Agents/Examples/video_and_graphs/GridGame/grid_game_gif.gif" alt="GridGame Demo" width="600"/>
 </p>
